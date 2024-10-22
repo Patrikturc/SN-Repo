@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <applies_to/>
+        <condition/>
+        <decision_type>allow</decision_type>
+        <description>Default access control on x_1539120_sparta_g_students</description>
+        <local_or_existing>Local</local_or_existing>
+        <name>x_1539120_sparta_g_students</name>
+        <operation display_value="delete">delete</operation>
+        <script/>
+        <security_attribute/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-21 10:01:14</sys_created_on>
+        <sys_id>2a99ab32835112105601f6b6feaad36b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1539120_sparta_g_students</sys_name>
+        <sys_package display_value="Sparta Global" source="x_1539120_sparta_g">6e759846831112105601f6b6feaad3f5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Sparta Global">6e759846831112105601f6b6feaad3f5</sys_scope>
+        <sys_update_name>sys_security_acl_2a99ab32835112105601f6b6feaad36b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-21 10:01:14</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Sparta Global">6e759846831112105601f6b6feaad3f5</application>
+        <file_path/>
+        <instance_id>a6bac0531b2dc258c82acb7b234bcbf4</instance_id>
+        <instance_name>dev259638</instance_name>
+        <name>sys_security_acl_2a99ab32835112105601f6b6feaad36b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to/><condition/><decision_type>allow</decision_type><description>Default access control on x_1539120_sparta_g_students</description><local_or_existing>Local</local_or_existing><name>x_1539120_sparta_g_students</name><operation display_value="delete">delete</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-10-21 10:01:14</sys_created_on><sys_id>2a99ab32835112105601f6b6feaad36b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1539120_sparta_g_students</sys_name><sys_package display_value="Sparta Global" source="x_1539120_sparta_g">6e759846831112105601f6b6feaad3f5</sys_package><sys_policy/><sys_scope display_value="Sparta Global">6e759846831112105601f6b6feaad3f5</sys_scope><sys_update_name>sys_security_acl_2a99ab32835112105601f6b6feaad36b</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-10-21 10:01:14</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+        <payload_hash>1670806798</payload_hash>
+        <record_name>x_1539120_sparta_g_students</record_name>
+        <reverted_from/>
+        <source>e5f3e886835112105601f6b6feaad301</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-21 10:01:14</sys_created_on>
+        <sys_id>2a99ab32835112105601f6b6feaad36e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>192ae8610b90000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-21 10:01:14</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>2e99ab3244511210b3a9909e2a75b86d</update_guid>
+        <update_guid_history>2e99ab3244511210b3a9909e2a75b86d:1670806798</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-21 10:05:41</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>a65de1a12578498bae30425b26f52491</sys_id>
+        <sys_metadata>2a99ab32835112105601f6b6feaad36b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1539120_sparta_g_students</sys_name>
+        <sys_package display_value="Sparta Global" source="x_1539120_sparta_g">6e759846831112105601f6b6feaad3f5</sys_package>
+        <sys_parent display_value="">7a99ab32835112105601f6b6feaad372</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Sparta Global">6e759846831112105601f6b6feaad3f5</sys_scope>
+        <sys_scope_delete display_value="">49d0745347d14e50b945c35953aa3900</sys_scope_delete>
+        <sys_update_name>sys_security_acl_2a99ab32835112105601f6b6feaad36b</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_2a99ab32835112105601f6b6feaad36b">2a99ab32835112105601f6b6feaad36e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-21 10:05:41</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

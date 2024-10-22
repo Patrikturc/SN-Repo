@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="80f51c86831112105601f6b6feaad3c1" label="Courses" max_length="40" name="x_1539120_sparta_g_courses" type="collection">
+        <element attributes="encode_utf8=false" label="Students" max_length="32" name="u_student" reference="x_1539120_sparta_g_student" reference_qual="Full Name" reference_qual_condition="Full Name" type="reference"/>
+        <element display="true" label="Students" max_length="32" name="u_students" reference="x_1539120_sparta_g_student" type="reference"/>
         <element attributes="edge_encryption_enabled=true" label="Start Date" mandatory="true" max_length="40" name="start_date" type="glide_date_time"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
         <element attributes="edge_encryption_enabled=true" label="End Date" mandatory="true" max_length="40" name="end_date" type="glide_date_time"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Course Name" mandatory="true" max_length="40" name="course_name" type="string"/>
@@ -23,5 +26,14 @@
                 <element inactive_on_update="false" label="Tentative" value="tentative"/>
             </choice>
         </element>
+        <index name="index">
+            <element name="sys_class_name"/>
+        </index>
+        <index name="index2">
+            <element name="u_student"/>
+        </index>
+        <index name="index3">
+            <element name="u_students"/>
+        </index>
     </element>
 </database>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="d8f5b372839112105601f6b6feaad3d9" label="Student" max_length="40" name="x_1539120_sparta_g_student" type="collection">
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element label="E-mail" mandatory="true" max_length="100" name="e_mail" type="string"/>
+        <element display="true" label="Full Name" max_length="100" name="full_name" type="string"/>
+        <index name="index">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

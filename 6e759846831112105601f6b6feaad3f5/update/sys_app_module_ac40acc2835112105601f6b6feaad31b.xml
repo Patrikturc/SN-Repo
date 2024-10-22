@@ -13,7 +13,7 @@
         <mobile_title>All</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
         <name>x_1539120_sparta_g_courses</name>
-        <order>3</order>
+        <order>110</order>
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
@@ -25,7 +25,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ac40acc2835112105601f6b6feaad31b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>All</sys_name>
         <sys_overrides/>
         <sys_package display_value="Sparta Global" source="x_1539120_sparta_g">6e759846831112105601f6b6feaad3f5</sys_package>
@@ -33,7 +33,7 @@
         <sys_scope display_value="Sparta Global">6e759846831112105601f6b6feaad3f5</sys_scope>
         <sys_update_name>sys_app_module_ac40acc2835112105601f6b6feaad31b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-10-18 11:26:06</sys_updated_on>
+        <sys_updated_on>2024-10-22 01:52:51</sys_updated_on>
         <timeline_page/>
         <title>All</title>
         <uncancelable>false</uncancelable>

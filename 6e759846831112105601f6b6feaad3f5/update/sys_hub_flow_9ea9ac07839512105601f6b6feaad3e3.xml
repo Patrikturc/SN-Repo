@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=65050000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Sends a reminder to relevant people two days before the course starts.</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>reminder</internal_name>
+        <label_cache>[{"name":"9268016a-48dc-43d9-bc2e-00547f9e43f8.Record.u_students.e_mail","label":"1 - Look Up Record➛x_1539120_sparta_g_courses Record➛Students (u_students)➛E-mail","reference":"","reference_display":"E-mail","type":"string","base_type":"string","parent_table_name":"x_1539120_sparta_g_student","column_name":"e_mail","usedInstances":{}},{"name":"9268016a-48dc-43d9-bc2e-00547f9e43f8.Record.u_students","label":"1 - Look Up Record➛x_1539120_sparta_g_courses Record➛Students (u_students)","reference":"x_1539120_sparta_g_student","reference_display":"Student","type":"reference","base_type":"reference","parent_table_name":"x_1539120_sparta_g_courses","column_name":"u_students","usedInstances":{}},{"name":"9268016a-48dc-43d9-bc2e-00547f9e43f8.Record","label":"1 - Look Up Record➛x_1539120_sparta_g_courses Record","reference":"x_1539120_sparta_g_courses","reference_display":"Courses","type":"reference","base_type":"reference","usedInstances":{},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9268016a-48dc-43d9-bc2e-00547f9e43f8.Record.u_student.e_mail","label":"1 - Look Up Record➛x_1539120_sparta_g_courses Record➛Students (u_student)➛E-mail","reference":"","reference_display":"E-mail","type":"string","base_type":"string","parent_table_name":"x_1539120_sparta_g_student","column_name":"e_mail","usedInstances":{"82a32a23-30e4-4f44-958c-5619a719196d":["ah_to"]}},{"name":"Updated_1.current","label":"Trigger - Record Updated➛Courses Record","reference":"x_1539120_sparta_g_courses","reference_display":"Courses","type":"reference","base_type":"reference","usedInstances":{"2f4e2f00-dc54-4880-88c2-c7b8d2aa1da2":["record"]},"attributes":{}},{"name":"Updated_1.run_start_time","label":"Trigger - Record Updated➛Run Start Time UTC","type":"glide_date_time","base_type":"glide_date_time","usedInstances":{"0e5b03e8-4cca-4482-9271-0aa61feb89e9":["condition"]},"attributes":{"test_input_hidden":"true"}},{"name":"Created_1.current","label":"Trigger - Record Created➛Courses Record","reference":"x_1539120_sparta_g_courses","reference_display":"Courses","type":"reference","base_type":"reference","usedInstances":{"6916295f-3371-48e8-b701-53040e471691":["record"]},"attributes":{}},{"name":"Created_1.run_start_time","label":"Trigger - Record Created➛Run Start Time UTC","type":"glide_date_time","base_type":"glide_date_time","usedInstances":{},"attributes":{"test_input_hidden":"true"}},{"name":"Created_1.current.start_date","label":"Trigger - Record Created➛Courses Record➛Start Date","reference":"","reference_display":"Start Date","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_1539120_sparta_g_courses","column_name":"start_date","usedInstances":{"4590f0df-4ed0-4770-9bd7-706c3f8ba24d":["condition"],"364a9ed8-1783-4348-8480-9f6ff1bc7351":["timer_duration"],"185d0acd-67ac-46d3-b7a8-c6fbe917e186":["condition"]}},{"name":"Created_1.table_name","label":"Trigger - Record Created➛Courses Table","reference":"x_1539120_sparta_g_courses","reference_display":"Courses","type":"table_name","base_type":"table_name","usedInstances":{},"attributes":{"test_input_hidden":"true"}},{"name":"Created_1.current.u_student","label":"Trigger - Record Created➛Courses Record➛Students (u_student)","reference":"x_1539120_sparta_g_student","reference_display":"Student","type":"reference","base_type":"reference","parent_table_name":"x_1539120_sparta_g_courses","column_name":"u_student","usedInstances":{"85045d3b-fc21-44f2-9365-9541d29d9600":["record"],"6ef2e35e-b45a-425d-a7b5-18aaf3518e14":["record"],"82a32a23-30e4-4f44-958c-5619a719196d":["ah_to"]}},{"name":"Created_1.current.course_name","label":"Trigger - Record Created➛Courses Record➛Course Name","reference":"","reference_display":"Course Name","type":"string","base_type":"string","parent_table_name":"x_1539120_sparta_g_courses","column_name":"course_name","usedInstances":{}},{"name":"9268016a-48dc-43d9-bc2e-00547f9e43f8.Record.u_student","label":"1 - Look Up Record➛x_1539120_sparta_g_courses Record➛Students (u_student)","reference":"x_1539120_sparta_g_student","reference_display":"Student","type":"reference","base_type":"reference","parent_table_name":"x_1539120_sparta_g_courses","column_name":"u_student","usedInstances":{"82a32a23-30e4-4f44-958c-5619a719196d":["record"]}}]</label_cache>
+        <master_snapshot>e7e770c783d512105601f6b6feaad326</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Reminder</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>77e770c783d512105601f6b6feaad343</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-21 14:41:06</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9ea9ac07839512105601f6b6feaad3e3</sys_id>
+        <sys_mod_count>25</sys_mod_count>
+        <sys_name>Reminder</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Sparta Global" source="x_1539120_sparta_g">6e759846831112105601f6b6feaad3f5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Sparta Global">6e759846831112105601f6b6feaad3f5</sys_scope>
+        <sys_update_name>sys_hub_flow_9ea9ac07839512105601f6b6feaad3e3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-22 08:45:18</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=9ea9ac07839512105601f6b6feaad3e3"/>
+    <sys_variable_value action="delete_multiple" query="document_key=9ea9ac07839512105601f6b6feaad3e3"/>
+    <sys_flow_timer_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <day_of_month>1</day_of_month>
+        <day_of_week/>
+        <name/>
+        <run_period/>
+        <run_start>2024-10-21 15:43:28</run_start>
+        <sys_class_name>sys_flow_timer_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-21 15:43:28</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>77e770c783d512105601f6b6feaad343</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Sparta Global">6e759846831112105601f6b6feaad3f5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-22 08:08:17</sys_updated_on>
+        <time>1970-01-01 17:30:00</time>
+        <timer_type>11</timer_type>
+    </sys_flow_timer_trigger>
+    <sys_flow_trigger_auto_script action="delete_multiple" query="name=Trigger:77e770c783d512105601f6b6feaad343^sys_idNOT IN7fe770c783d512105601f6b6feaad343"/>
+    <sys_flow_trigger_auto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <max_drift/>
+        <name>Trigger:77e770c783d512105601f6b6feaad343</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek/>
+        <run_period/>
+        <run_start>2024-10-21 15:43:28</run_start>
+        <run_time>1970-01-01 17:30:00</run_time>
+        <run_type>daily</run_type>
+        <script><![CDATA[sn_flow_trigger.FlowTriggerAPI.fireTimerTrigger('77e770c783d512105601f6b6feaad343');]]></script>
+        <sys_class_name>sys_flow_trigger_auto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-21 15:43:28</sys_created_on>
+        <sys_id>7fe770c783d512105601f6b6feaad343</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Sparta Global">6e759846831112105601f6b6feaad3f5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-22 08:08:17</sys_updated_on>
+        <time_zone/>
+        <trigger display_value="">77e770c783d512105601f6b6feaad343</trigger>
+        <upgrade_safe>true</upgrade_safe>
+    </sys_flow_trigger_auto_script>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=9ea9ac07839512105601f6b6feaad3e3"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=9ea9ac07839512105601f6b6feaad3e3"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=9ea9ac07839512105601f6b6feaad3e3^sys_idNOT IN56a9ac07839512105601f6b6feaad3e6"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>9ea9ac07839512105601f6b6feaad3e3</id>
+        <name>Reminder</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-21 14:41:06</sys_created_on>
+        <sys_id>56a9ac07839512105601f6b6feaad3e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-21 14:41:06</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=56a9ac07839512105601f6b6feaad3e6"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=9ea9ac07839512105601f6b6feaad3e3"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=9ea9ac07839512105601f6b6feaad3e3"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=9ea9ac07839512105601f6b6feaad3e3"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=9ea9ac07839512105601f6b6feaad3e3^sys_idNOT IN6746f4c383d512105601f6b6feaad3bd"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Reminder">9ea9ac07839512105601f6b6feaad3e3</flow>
+        <name>Daily</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-21 15:36:21</sys_created_on>
+        <sys_id>6746f4c383d512105601f6b6feaad3bd</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-22 08:08:12</sys_updated_on>
+        <trigger_definition display_value="Daily">89142dc0c32222002841b63b12d3ae8a</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/21SS0vEMBD+K5LzWtLt+upNkAUPKqh4ESnTZLobmCYxTVer+N+dtHVR2ZLLzDfzPYY+fwqCGkmU4tG0KBbC2IjBAj0OHrm7IaOxihPWgtUQXRhEGUOPC+GCxiDKXMqF2AH1+DB015rXeNhCmwjm1RHlMr84k8cy53ckL8pCllIy6iHwdExcn0JtDemAVpTPL+wn0RWgV6iVVMWSPymX56u8Pi3qfKkLQDxhin8x/qrHA2F+e8f3iFYjSzVAHR5IGhD0naVhP7HlQ01BW3jvzAfOVAEbZPMKJ1BtnVF456NxdupEqOkHdNS39nayyrXGBnqKT/OtuNN3WGn0yVySm7Wbh617u/8RWhs7JplBcgpoX0GMwdR9xC6dFglbJqpa8N7YTeWD25lxmb202XifrCH3xqKd2dgMVDKe8S0gW3P/amw/QTApxQ3T8PLXmLp67ZPulGN2XE2heUCbzhMMa4M0/x+dCsbHSxbY4Wz36+UbzJzIrJACAAA=</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>daily</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=9ea9ac07839512105601f6b6feaad3e3^sys_idNOT IN2346bc0783d512105601f6b6feaad3bb,2f46f4c383d512105601f6b6feaad3be"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Reminder">9ea9ac07839512105601f6b6feaad3e3</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-21 15:36:21</sys_created_on>
+        <sys_id>2346bc0783d512105601f6b6feaad3bb</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Sparta Global">6e759846831112105601f6b6feaad3f5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-22 08:40:32</sys_updated_on>
+        <ui_id>82a32a23-30e4-4f44-958c-5619a719196d</ui_id>
+        <values>H4sIAAAAAAAA/+1Y227bOBD9FUK7T1lHkS1f06dss0ELbBsgMboPdSFQFGWzoUQtSSVxA//7DknJ18RxnQu2aIEgAUecmTMzZ4ZkPt95LPGOvXbSD7px2sa9IGyFQdBvDQZxOEiDfm8QNEniNbwcZxR2SkqENOtrzEsjuLsbtLr9oNnFh+1+Qg7bYTI4jEmLHgZBp91LB7Qdpn3/wur5ZaR0mdBcz2ZgI2Gq4Hj6qTIFEjJhPJE0944/f2l4BZbgVVPpHd+tfdLTgkYcx5SD4qkgZQZG0ftTsLFrRLX2EMsx1eiijmw9UuMK1knlJGJGCJ8MrKDh0VtN84SC0xRzRRtehvMEayGnc4mkODnP+UIwYbkGkydKCcKwpgrpCUU0w4yjG6YnCCPn3veMvVvFvgGEsGVMpRSSQAwilhNmcmnzJhih54VmIneZ1DjmdVIFL7P8owvLpJ2muOR6Ke2lolFCCxOHAaZlCSDTy4m4uaj9nbHcRlxFwAXBfL7CWksWlxCIrRSnWC7sRRaSsQmeKKc2iRkuCpaPo0KKa2YNA8zMH3NY+CkXN6Cv2Dj3MTEx+ZBR7J+B/NSKP2HJTIAfwAwoz2xion9Lg8mFuOrc7I1sYWGrIpIV+gQMX9MqhFmj6oTmYBtvkvaCH0s2F91wGzU74aDZCiIF5NU4GteE36T71r37NcLQYEIfHaZd41lRfiC+qgdWZFULNJ/UAkPgvXYN6BiPdAVjTvt+sEr7Z6d7hWhvvr8Mp6GAKnJUrWKzzh/l+mMMD7rdOO7GnV64YMSApEkvTru4R8IFA25gMskMy6vITqYlmjc32Vz19568BeWjMxteY2eUtfL7nHBoG/RPDXdbBBWRYyFgSOULFreexGLHRKQFgtrxKYzvuWcjXAx3PcEaMYUUlMtHQ4FYBX5Jo4GmokRZqTRs0/BlpT9WToT287ZGVcNKenpvgX+I3nlqj3S2T028YBieRFosdQba8z7k08gQZDZDm631LDb3a8xLqFU+rptyh7TMO1ps5qjqPVXbrFov3N567jKy0XlLx0Pwsx4QCeUsY7aKrj2fyvtka4FpsFJTQpZ4/4y3+VXO7QCpVnz7dhPfA5xr7zfuf5HuBUjX3PpUo92Vosavw7odMNWKf67RLt7Gu84v3v1veNfZXmOyUlVVxl8p0Uvcu6CZS8oGB5e+PMup+zjOueIc5X3IH+Bk99f5+5qXzFpogC2VB1ZbN3tHB6P84OCEEKoUMqCOTixKZFCiUkFg9qGRJpGVCGvXR5fWgHtPSKpLmcOTwpLYR8biuWEByssshj/wNBFpap4d8RT90YTnCfpLSiHROyAENy4uqcuNBXMN10v7LwdhK61Q1QmoLABYIQGq0Rl5/shDOAXm1/CMOr3FWcHpMaCRSE2E1JBngkZlEIRJvdGHQo7HVPqklNJcau1GUygbF3h9Y2xVkc2tGOGRN5vNux1v7aK0tTrDRTJdanWLiBQ204ea5dOMUCmEjoF0Vw7uyBu5bfSUQjROQxU4R4RjpepNE/5VHV5XPKo1fr+rL+wGwczpHhll971RSQq3HOXfhcdtjiU6cms0nECV4cf8j9ENKvcshVenRAR+Kbodvxsgc/vedwZbF9K5iu6Puba6JEI3jHOk4DWsEbBrT69W3zDrHqc+Wk/WPcnD+ZVJ1VpRNk+BqkivTYpXKjr8bnV/C9tvXqT4a9Z/IBLsd+C/G374uz7udxhU86unG1Mbc6s66Cc644tjvvfEq2e30wm7P+VBD3W8SVqJFEVRxfak++eX/wAF86o7dhsAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Reminder">9ea9ac07839512105601f6b6feaad3e3</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-21 15:36:21</sys_created_on>
+        <sys_id>2f46f4c383d512105601f6b6feaad3be</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Sparta Global">6e759846831112105601f6b6feaad3f5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-22 08:08:12</sys_updated_on>
+        <ui_id>9268016a-48dc-43d9-bc2e-00547f9e43f8</ui_id>
+        <values>H4sIAAAAAAAA/9VYW2/aMBT+K1GeKUsIEOhTq3VIlbpV6lhfuspyYgesGTuznVJa9b/vOBegXFNKpe7R9rl855zPXwx3zy4j7qlL+l4/6fc7vdDzgsDzut0gxn4UBd048iLcdhuuwBMKlgZHnMLyAfPMrh+R3wn6fstDOsXKYDRCscyUphqMCNMpx7PbOrbxmHGiqHBP7+4bLpxDPkOVe/q8cmRmKUUcR5RDyKGF4/yw2Bq1S3nlvF6aTVAtkShCS0UsFq/h0kdDBaGQKsFc04Y7wYJgI9VsvqMoJteCLzbGTBiI6FrjR82eIHzPs3YJhbJiWpzFY8liep0aJkWxUyAqDiXPJuJHgdS2liY446ZqLexkmiJCUwvOZitTJz/HcnpTJRowkddRHnIZYz5fYWMUizID44CmU04nEAhNcJoyMUKpkg8sdwYsk+aIw6KZcDmFpJqNRBPHFngTeoGbA9i/yLdvsWK2iu8QBpwBEOMwVlR0V8P48/IfUMwznR8oLHQRy33Je4T+ZhZlUXVZHypaBAY6Viw15+DwQMtSXhoVrTs7udBfzD6WgjCbUy9xWxtgKYKC6M23q/Ph5e23q+EZwTOZTCn9c4bHMOez1jrPa/sdxvmvy1jr1rnReVPxJftf7ZXs94/G/rbnfTT/jco+H/33EbooeA+rfbJz2mQxWC2Bh0Xnlmi9TtiDqThglJNX8lsDXOV8bVnlRLNteEsmJjbHig63/h8d/pQ8BEAEFY1lgjORf+8A6HEI2tnJgchfGXg+5yXVtXtYx+s0xY6RztPhupnPtSJqDZCV409A5AwLlBuAV4pZhS85GhyNo0FrC0eBIXfPc5jz9mzoZPV+sTOq7J+sPV61BxotOfgv93OOfz0sp//WnC2bc+USBm+6hcsUKk4utjDpyI+mLbeq8ZHXeAyuZT5U3Eo0ZWREzSJ7ZUWkmWL+Z9N5edXmlyUv790PMH/nYzxaeoCxBE1gTiyFV6GiMVBBI6woSmQmCCrfgwva2LklTGlTGq+LxQ01mRKOhLvlmDF1cmtnbn0MCalRXeV4mThVeSUG7UB5Tl6eMy/vbc3YIjztIz7TagnPADOe9xge8OnSkKhSUm0Rnz3j2THnmspUE5R/VFDvl65NxN4oYXuw/he/Bt8rLzHFUbuFu2Hg+57neyT0emHo97pR0sVhO1ncKIS0iEH/IHICxIDwqCJCNVVvXUMKETz4vwkQ1y+DMkRdvJXzhRS/M89rhcaxgGHOTgV4f0mlMERScorFgp6dj1eGz/L3RcaGq00otq42TeejPs8Z+yXY34xe2un3qNfq+SQ+6YV+eNJOSPekT3DnBPejThgQGreTw7+49/8AixORRMsTAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=9ea9ac07839512105601f6b6feaad3e3"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=9ea9ac07839512105601f6b6feaad3e3"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=9ea9ac07839512105601f6b6feaad3e3"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=9ea9ac07839512105601f6b6feaad3e3"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_9ea9ac07839512105601f6b6feaad3e3"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_9ea9ac07839512105601f6b6feaad3e3"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_9ea9ac07839512105601f6b6feaad3e3"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_9ea9ac07839512105601f6b6feaad3e3"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Sends a reminder to relevant people two days before the course starts.</description>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>reminder</internal_name>
+        <label_cache>[{"name":"9268016a-48dc-43d9-bc2e-00547f9e43f8.Record.u_students.e_mail","label":"1 - Look Up Record➛x_1539120_sparta_g_courses Record➛Students (u_students)➛E-mail","reference":"","reference_display":"E-mail","type":"string","base_type":"string","parent_table_name":"x_1539120_sparta_g_student","column_name":"e_mail","usedInstances":{}},{"name":"9268016a-48dc-43d9-bc2e-00547f9e43f8.Record.u_students","label":"1 - Look Up Record➛x_1539120_sparta_g_courses Record➛Students (u_students)","reference":"x_1539120_sparta_g_student","reference_display":"Student","type":"reference","base_type":"reference","parent_table_name":"x_1539120_sparta_g_courses","column_name":"u_students","usedInstances":{}},{"name":"9268016a-48dc-43d9-bc2e-00547f9e43f8.Record","label":"1 - Look Up Record➛x_1539120_sparta_g_courses Record","reference":"x_1539120_sparta_g_courses","reference_display":"Courses","type":"reference","base_type":"reference","usedInstances":{},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9268016a-48dc-43d9-bc2e-00547f9e43f8.Record.u_student.e_mail","label":"1 - Look Up Record➛x_1539120_sparta_g_courses Record➛Students (u_student)➛E-mail","reference":"","reference_display":"E-mail","type":"string","base_type":"string","parent_table_name":"x_1539120_sparta_g_student","column_name":"e_mail","usedInstances":{"82a32a23-30e4-4f44-958c-5619a719196d":["ah_to"]}},{"name":"Updated_1.current","label":"Trigger - Record Updated➛Courses Record","reference":"x_1539120_sparta_g_courses","reference_display":"Courses","type":"reference","base_type":"reference","usedInstances":{"2f4e2f00-dc54-4880-88c2-c7b8d2aa1da2":["record"]},"attributes":{}},{"name":"Updated_1.run_start_time","label":"Trigger - Record Updated➛Run Start Time UTC","type":"glide_date_time","base_type":"glide_date_time","usedInstances":{"0e5b03e8-4cca-4482-9271-0aa61feb89e9":["condition"]},"attributes":{"test_input_hidden":"true"}},{"name":"Created_1.current","label":"Trigger - Record Created➛Courses Record","reference":"x_1539120_sparta_g_courses","reference_display":"Courses","type":"reference","base_type":"reference","usedInstances":{"6916295f-3371-48e8-b701-53040e471691":["record"]},"attributes":{}},{"name":"Created_1.run_start_time","label":"Trigger - Record Created➛Run Start Time UTC","type":"glide_date_time","base_type":"glide_date_time","usedInstances":{},"attributes":{"test_input_hidden":"true"}},{"name":"Created_1.current.start_date","label":"Trigger - Record Created➛Courses Record➛Start Date","reference":"","reference_display":"Start Date","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_1539120_sparta_g_courses","column_name":"start_date","usedInstances":{"4590f0df-4ed0-4770-9bd7-706c3f8ba24d":["condition"],"364a9ed8-1783-4348-8480-9f6ff1bc7351":["timer_duration"],"185d0acd-67ac-46d3-b7a8-c6fbe917e186":["condition"]}},{"name":"Created_1.table_name","label":"Trigger - Record Created➛Courses Table","reference":"x_1539120_sparta_g_courses","reference_display":"Courses","type":"table_name","base_type":"table_name","usedInstances":{},"attributes":{"test_input_hidden":"true"}},{"name":"Created_1.current.u_student","label":"Trigger - Record Created➛Courses Record➛Students (u_student)","reference":"x_1539120_sparta_g_student","reference_display":"Student","type":"reference","base_type":"reference","parent_table_name":"x_1539120_sparta_g_courses","column_name":"u_student","usedInstances":{"85045d3b-fc21-44f2-9365-9541d29d9600":["record"],"6ef2e35e-b45a-425d-a7b5-18aaf3518e14":["record"],"82a32a23-30e4-4f44-958c-5619a719196d":["ah_to"]}},{"name":"Created_1.current.course_name","label":"Trigger - Record Created➛Courses Record➛Course Name","reference":"","reference_display":"Course Name","type":"string","base_type":"string","parent_table_name":"x_1539120_sparta_g_courses","column_name":"course_name","usedInstances":{}},{"name":"9268016a-48dc-43d9-bc2e-00547f9e43f8.Record.u_student","label":"1 - Look Up Record➛x_1539120_sparta_g_courses Record➛Students (u_student)","reference":"x_1539120_sparta_g_student","reference_display":"Student","type":"reference","base_type":"reference","parent_table_name":"x_1539120_sparta_g_courses","column_name":"u_student","usedInstances":{"82a32a23-30e4-4f44-958c-5619a719196d":["record"]}}]</label_cache>
+        <master>true</master>
+        <name>Reminder</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Reminder">9ea9ac07839512105601f6b6feaad3e3</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-21 15:43:27</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e7e770c783d512105601f6b6feaad326</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Sparta Global">6e759846831112105601f6b6feaad3f5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-22 08:45:17</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=e7e770c783d512105601f6b6feaad326"/>
+    <sys_variable_value action="delete_multiple" query="document_key=e7e770c783d512105601f6b6feaad326"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=e7e770c783d512105601f6b6feaad326"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=e7e770c783d512105601f6b6feaad326^sys_idNOT INabe770c783d512105601f6b6feaad327"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>e7e770c783d512105601f6b6feaad326</id>
+        <name>Reminder</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-21 15:43:27</sys_created_on>
+        <sys_id>abe770c783d512105601f6b6feaad327</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-21 15:43:27</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=abe770c783d512105601f6b6feaad327"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=e7e770c783d512105601f6b6feaad326"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=e7e770c783d512105601f6b6feaad326"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e7e770c783d512105601f6b6feaad326"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=e7e770c783d512105601f6b6feaad326^sys_idNOT INebe770c783d512105601f6b6feaad32b"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Reminder">e7e770c783d512105601f6b6feaad326</flow>
+        <name>Daily</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-21 15:43:27</sys_created_on>
+        <sys_id>ebe770c783d512105601f6b6feaad32b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-22 08:08:16</sys_updated_on>
+        <trigger_definition display_value="Daily">89142dc0c32222002841b63b12d3ae8a</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/21SS0vEMBD+K5LzWtLt+upNkAUPKqh4ESnTZLobmCYxTVer+N+dtHVR2ZLLzDfzPYY+fwqCGkmU4tG0KBbC2IjBAj0OHrm7IaOxihPWgtUQXRhEGUOPC+GCxiDKXMqF2AH1+DB015rXeNhCmwjm1RHlMr84k8cy53ckL8pCllIy6iHwdExcn0JtDemAVpTPL+wn0RWgV6iVVMWSPymX56u8Pi3qfKkLQDxhin8x/qrHA2F+e8f3iFYjSzVAHR5IGhD0naVhP7HlQ01BW3jvzAfOVAEbZPMKJ1BtnVF456NxdupEqOkHdNS39nayyrXGBnqKT/OtuNN3WGn0yVySm7Wbh617u/8RWhs7JplBcgpoX0GMwdR9xC6dFglbJqpa8N7YTeWD25lxmb202XifrCH3xqKd2dgMVDKe8S0gW3P/amw/QTApxQ3T8PLXmLp67ZPulGN2XE2heUCbzhMMa4M0/x+dCsbHSxbY4Wz36+UbzJzIrJACAAA=</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>daily</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=e7e770c783d512105601f6b6feaad326^sys_idNOT IN27e770c783d512105601f6b6feaad32b,ebe770c783d512105601f6b6feaad32a"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Reminder">e7e770c783d512105601f6b6feaad326</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-21 15:43:27</sys_created_on>
+        <sys_id>27e770c783d512105601f6b6feaad32b</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Sparta Global">6e759846831112105601f6b6feaad3f5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-22 08:40:37</sys_updated_on>
+        <ui_id>82a32a23-30e4-4f44-958c-5619a719196d</ui_id>
+        <values>H4sIAAAAAAAA/+1Y227bOBD9FUK7T11HkS1f06dsvEEL9ALEQfehLgSKomy2lKglqSTewP++Q1GSZTtw7dQtEmwAw4BGnOGZmXN40ed7h0XOmdONhl4/jLt44Pkd3/OGndEo9EexNxyMvDaJnJaT4oTCSEmJkOb5BvPcGO7vR53+0Gv38Ul3GJGTrh+NTkLSoSee1+sO4hHt+vHQvSr83DxQOo9oqpdLiBExlXG8+FSGAguZMx5Jmjpnn7+0nAxLmFVT6Zzdb7zaFzbHIeUw9BrLGdXoqoK/mY5eZOY5EiRPAF7AKuO7MsC4fIPejuENOBlUXsuhd5qmEQU4MeaKtpwEpxHWQi5qi6Q4+pjylWHOUg0hz5UShGFNFdJzimiCGUe3TM8RRhaY65h4d4r9C+D8jgkVU6gBMVhZSpgppdMwX+OQ07EtKwx5uxoSj7HGEy1zonNZV1swQpWtaERjnHN90bTZAR8zzURqXbSZoPQWPE/SD7aQTh2g0c1c0SCimamPSRgmh+TjyVzcXlWAL1laVLKsDBcE8/opnlAsyfySUW7aneZJCGNbDtZasjDXBiYQg8Oo1TxBAdXMBSMpp0U7E5xlLJ0FmRQ3rJgQ4CfujMODG3NxC/6KzVIXE5OrCx3E7iXYx4X5E5bMJP4ewoDzsuWohbrgWKlV+tCD4J/coLfFWIdjvIOCdMaZSJbpc5jqhpbJLlulFNujXZyOuivuNmKu5HgXtHv+qN3xAgXq0TiYVYrb1tvOsYcpcQ/UKyUaBj2cRanCLdu7pi/6YF+UGmwfqEHLwlKC16A7bZcGqzikS3i17Ibeuux2yO1pyKwWz946W9fTz9EMEEUFlvhlbsXkj9DS9xTk9fth2A97A3/FxRGJo0EY9/GA+Cvu3cLaKxMsvwXF2tuQUXtbLeWKcpgu9sBS6QLWag7iQ39XoHbhLIUSCgGLX7qpEkB6ellUt1ZJ54d2KktNpAWCZvIF7E81JGNc7V56jjViCinolouuBWJlVg2PFlqIHCW50jBMw5s1Aa5ted2nrb2SEqV1/CBfnoU4jy/C3u4NAa/IjeeBFg3poUeeKF0aGAoul2hbu0eJeZjy9yhAvSOK7WqUAlfQ+3S2oe9JZSy17e/Wtt3wtqTd2OC8py2z56IiA5yzhBWksPo/vrCinbyi3hqVCGkI6wgXrj0mr0h9cbGN5BBSdx+3Yb2w+lmyur3zJk/7a1wKj03rPWavaP3nBq/Dg4ndeyH2/4jYvd3UImtkUnn4lRLdIPcVTWyZtkjeeHPgweT7iCqyT2o8D2E8hPT9lyPKk+D80QheGQ3UBivgaedg5/TVNH316pxA1RUyME/PC9zI4Ea5glSL62QcBYVFFHFdNCkC2FujpNDVFC6OhUpcZCJ+NDxD9guhuYCKODaXy3CB/mjDJRT9JaWQ6A1QjpspJtRWqwBzA0f84sOSKHqvUCk1lGcALJMA1fhMHXfqIByDtCp4xp3e4STj9AzQSKTmQmqoPEHT3PP8qBroQmtnMypdkktpLhbFQNO6Ii+Y9bWJVWZWRzHGU2e5rJcTvFO8cWd9bxLRorGWFIhIVlT6RLN0kRAqhdAh0PCbhTt1pnYYHVPIxnqoDKeIGMpUg+b8qzq5KZlVefx+X12aDIKl9T01zvZ9q7Rk9nGaHoTHDg4lOrXP6HoOXYaf+VRuV0L78WEhcokI/Cm6G79dt+r4zoHJVo20UwUP51xFbZjQLeMcKY2lRsCuR85a+BtmPTCpizaL9UDxcPrNlGqjKdvbTNmkX02KX9R0+O/0f/O7r39K8zeiPyMSHHai2GNRqo/PdknaWqPKs8RcJ3zjJPHm+v271Tli8IOH536v5/dfThJHOT1nt1EnkiLLytyOfIL+8h8hP0ZcnR4AAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Reminder">e7e770c783d512105601f6b6feaad326</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-21 15:43:27</sys_created_on>
+        <sys_id>ebe770c783d512105601f6b6feaad32a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Sparta Global">6e759846831112105601f6b6feaad3f5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-21 15:43:27</sys_updated_on>
+        <ui_id>9268016a-48dc-43d9-bc2e-00547f9e43f8</ui_id>
+        <values>H4sIAAAAAAAA/+VY0W7iOhD9lSjPlJsQINCnrsoiVerdSi23L3tXlhM7YK2xs7ZTSqv++07iBBCkQLQgtdpHj8eeMzPnTAzfX11G3EuXDL1hMhz2BqHnBYHn9ftBjP0oCvpx5EW467ZcgecUPA2OOIXlE+ZZvn5Gfi8Y+h0P6RQrg9EUxTJTmmpwIkynHC8fj/GNZ4wTRYV7+f1Hy4V9iGeoci9ft7aOBcxxRDm4TkrEWwmYZbpaomLP2m43jznf7IZUJIfitVz6bKggFDAkmGvacudYEGykWq4simJyJ/jaMGPCwI1u7vys2QvEHXi5X0Ihq5javdWyiDyypbNbyQgb/GBUFptMle7xTLIYKlfUhNAEZ9xcb9qsw11qmBT2iE3dnpY8m4tvtiTu6oKqU2DJNEWEpnmyOfoyleRhJhf3FdIxE0Vdyk0uY8xXK2yMYlFmcjyvLuV0DhehOU5TJqYoVfKJFYcBy7w95bBoJ1wuIKhmU9HGcQ68DbXF7THYR4X5ESuWZ/EvXAOHARDjwBJk26iBTUU5n1DMM11sKCy0vct9a7l6qa851nqdOZQd/cpy3LYOZcbIFi0/EiuWmi9wxRMtk3trVbrp7aXhcE27WArCchR6QzzagAwQpEjvv95+mdw8fr2dXBG8lMmC0p9XeAZMuursCunocw1FdTibSlTXm+nUpVjKa8d2W3dBKS//ZPLqet5nExgE/3j6aq4YW4IDsvHJXqKRNae0BKLbWm7oZlcRjbl+BISK63c5O51o+R6qkuoJo5zUfUnG+cbWl6Tz935JPiTRARBBtoNMcCaKpwEAPZcCenvpF/lbXCsotvHdyG1Yx7s6wI6RzktjNRwBp1LDA8R2JhZPDcRq7heU2Z75lbEUQXAyEQSd04ngdZXqqpg1da9ehHlHK/+X3B9v+wMNNw74b3UiaxTTbxqz87Yr4qCRijcJZ3dG7/DuxM/Gd1TZOucYmMHRMh6yGkYLRqbUrKNXXkSaBeY/6/ZLYaKqUUV6Z3iC+nt/CUUbT1CWoDl0jqXwUlY0BnJohBVFicwEQeUbeU2kvJMJU9qUzrvD5p6CfoQjQZyOmVGn8HZW3g0/yIfzqEp5kzhVImU07UAiTpGIs0qkWdpNBlf3hA/VcwyuMWa86Aj8BEo3WkqVkuqd4XWgmXtYceRkOxKUf1JQfz766mRQOwIPYP0Uv6dPP55iiqNuB/fDwPc9z/dI6A3C0B/0o6SPw26y1ilCWsQwUeHmBKgC16OKGlWfvd0ZZMdq02FzBKqKgiMp/s88rxMaJ4cF/XUqWIeBl0MlkpJTLLamygS+Ff+MS/wlX3sfcrJ8in+YMjbZrrY11db7XO+HjP0n2K+M3uQ0G1CvM/BJfDEI/fCim5D+xZDg3gUeRr0wIDTuJqd8Evz4DVEkc6LPFQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=e7e770c783d512105601f6b6feaad326"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=e7e770c783d512105601f6b6feaad326"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=e7e770c783d512105601f6b6feaad326"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=e7e770c783d512105601f6b6feaad326"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_e7e770c783d512105601f6b6feaad326"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_e7e770c783d512105601f6b6feaad326"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_e7e770c783d512105601f6b6feaad326"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_e7e770c783d512105601f6b6feaad326"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>9ea9ac07839512105601f6b6feaad3e3</sys_id>
+        <latest_snapshot>e7e770c783d512105601f6b6feaad326</latest_snapshot>
+        <compiler_build>glide-xanadu-07-02-2024__patch1-08-24-2024_09-01-2024_1853.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=9ea9ac07839512105601f6b6feaad3e3^sys_idNOT INb7e770c783d512105601f6b6feaad346"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"b7e770c783d512105601f6b6feaad346","name":"plan","plan_signature":null}}</plan>
+        <plan_id>9ea9ac07839512105601f6b6feaad3e3</plan_id>
+        <snapshot>e7e770c783d512105601f6b6feaad326</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-21 15:43:28</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b7e770c783d512105601f6b6feaad346</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-22 08:08:17</sys_updated_on>
+        <trigger display_value="">77e770c783d512105601f6b6feaad343</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=9ea9ac07839512105601f6b6feaad3e3"/>
+</record_update>
